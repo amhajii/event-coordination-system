@@ -33,7 +33,7 @@ export function SendBox({ text, setText , handleSend }: MassageProps) {
             h-11 flex-1 text-right rounded-xl bg-gray-50 text-[13px] shadow-none outline-none
             "
           />
-          <Button size="icon" aria-label="ارسال" onClick={handleSend} disabled={!text.trim()} className="size-11 cursor-pointer rounded-xl">
+          <Button size="icon" aria-label="ارسال" onClick={() => handleSend?.(text.trim())} disabled={!text.trim()} className="size-11 cursor-pointer rounded-xl">
             <Send size={18} className="rtl:-scale-x-100 rotate-90 cursor-pointer" />
           </Button>
         </div>

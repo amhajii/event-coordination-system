@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, Suspense, useCallback, useContext, useEffect, useState } from "react";
 import { topics as seedTopics, type Topic } from "./mock-data";
 import { emptyDetail, topicDetails, type Message, type TopicDetail } from "./topic-details";
 
@@ -117,7 +117,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <Ctx.Provider value={{ ready, topics: state.topics, getDetail, addTopic, addMessage, toggleLike, selectOption, decide, reset }}>
-      {children}
+      <Suspense fallback={null}>{children}</Suspense>
     </Ctx.Provider>
   );
 }
