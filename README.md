@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event Coordination System
+
+An automated platform for coordinating event planning and execution through missions, task dependencies, and collaborative workflows.
+
+## Overview
+
+Organizing an event requires multiple people to complete interconnected tasks, from securing a venue and managing the budget to promoting the event and handling registrations.
+
+**Event Coordination System** aims to simplify this process by turning event planning into a structured, mission-based workflow.
+
+Instead of relying on a single event coordinator to assign tasks and track every detail, the system helps participants understand what needs to be done, when it should be completed, and which tasks depend on others.
+
+## The Problem
+
+Event planning often involves:
+
+- Scattered tasks and responsibilities.
+- Dependencies between activities.
+- Missed deadlines and communication gaps.
+- Difficulty tracking overall progress.
+- Reliance on a central coordinator to keep everything organized.
+
+## The Solution
+
+The system models event preparation as a sequence of connected missions. Each mission represents an actionable task with a defined status, deadline, and dependencies where applicable.
+
+As work progresses, the system provides a clearer view of outstanding tasks, blockers, and the overall readiness of the event.
+
+## Core Concepts
+
+- **Event:** The gathering being planned and organized.
+- **Mission:** An actionable task required to prepare or execute the event.
+- **Workflow:** The sequence and relationships between missions.
+- **Dependency:** A condition that must be satisfied before another mission can proceed.
+- **Participant:** A person involved in completing event-related work.
+
+## Key Features
+
+The project focuses on the following capabilities:
+
+- **Mission-based planning:** Break down event preparation into manageable tasks.
+- **Dependency management:** Represent relationships between tasks and identify blocked missions.
+- **Progress tracking:** Monitor mission statuses and overall event progress.
+- **Deadline management:** Organize tasks around their due dates.
+- **Collaborative execution:** Make responsibilities and outstanding work visible to participants.
+- **Event readiness:** Track the progress of preparations toward the event date.
+
+Additional capabilities, such as registration management, ticketing, and attendee check-in, may be introduced as the project evolves.
+
+## Workflow
+
+1. Create an event.
+2. Define its preparation plan and required missions.
+3. Establish task dependencies and deadlines.
+4. Complete missions and update their statuses.
+5. Track progress and resolve blocked tasks.
+6. Monitor readiness for the event.
+7. Review the completed workflow after the event.
+
+## Project Scope
+
+The initial MVP focuses on the essential workflow for coordinating event preparation and execution.
+
+The goal is to validate the mission-based approach before expanding the platform with more advanced automation and event management capabilities.
+
+## Technology Stack
+
+The technology stack and implementation details are documented alongside the source code as the project evolves.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/amhajii/event-coordination-system.git
+cd event-coordination-system
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow the installation and development instructions for the current application stack and package configuration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Status:** MVP development
 
-## Learn More
+The project is being developed as a practical software engineering project, with an emphasis on workflow design, task dependencies, automation, and maintainable architecture.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions, suggestions, and bug reports are welcome.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting changes.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built to make event coordination more structured, transparent, and collaborative.
