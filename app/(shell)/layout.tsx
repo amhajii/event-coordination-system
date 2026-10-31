@@ -7,7 +7,7 @@ export default function ShellLayout({ children }: { children: React.ReactNode })
   return (
     <StoreProvider>
       <div dir="ltr" className="h-screen bg-blue-400 ">
-        <div className="relative bg-white flex h-screen w-screen mx-auto overflow-hidden">
+        <div className="relative bg-white flex w-screen mx-auto overflow-hidden">
           {/* <Sidebar /> */}
           {/* <EventList /> */}
           {children}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Thermometer } from "lucide-react";
 
 // فونت محلی: بدون نیاز به دانلود از اینترنت
 const vazir = localFont({
@@ -11,9 +12,13 @@ const vazir = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "LOG — هماهنگی و اجرای رویدادها",
+  title: "سامانه مدیریت رویدادها",
   description: "از گفتگو تا تصمیم، از تصمیم تا اجرا",
 };
+export const viewport = {
+  themeColor: "#0369A1",
+};
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
