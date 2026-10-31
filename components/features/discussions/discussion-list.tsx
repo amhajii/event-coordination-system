@@ -40,7 +40,7 @@ export function DiscussionList({ eventId }: { eventId: string }) {
         
         <div className="flex flex-col">
           <b className="md:text-xl text-xl font-black">بحث‌ها</b>
-          <span className="md:text-xs text-xs text-gray-400">هر عضو می‌تواند تازه بحث ای را شروع کند</span>
+          <span className="md:text-xs text-xs text-gray-400">هر عضو می‌تواند بحث تازهای را شروع کند</span>
         </div>
 
         <Button variant="secondary" className="cursor-pointer rounded-xl text-sm h-11 px-3  md:h-11 md:px-5" onClick={() => setOpen(true)}>
